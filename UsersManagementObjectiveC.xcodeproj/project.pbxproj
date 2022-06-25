@@ -15,6 +15,7 @@
 		C32D6848286755BB00DECAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D6847286755BB00DECAF2 /* main.m */; };
 		C32D68502867655900DECAF2 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D684F2867655800DECAF2 /* FavoritesViewController.m */; };
 		C32D68532867675400DECAF2 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D68522867675400DECAF2 /* TabBarViewController.m */; };
+		C32D685628676E9300DECAF2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D685528676E9300DECAF2 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		C32D684F2867655800DECAF2 /* FavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		C32D68512867675400DECAF2 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		C32D68522867675400DECAF2 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		C32D685428676E9300DECAF2 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C32D685528676E9300DECAF2 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				C32D684F2867655800DECAF2 /* FavoritesViewController.m */,
 				C32D68512867675400DECAF2 /* TabBarViewController.h */,
 				C32D68522867675400DECAF2 /* TabBarViewController.m */,
+				C32D685428676E9300DECAF2 /* SettingsViewController.h */,
+				C32D685528676E9300DECAF2 /* SettingsViewController.m */,
 			);
 			path = UsersManagementObjectiveC;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				C32D6848286755BB00DECAF2 /* main.m in Sources */,
 				C32D68532867675400DECAF2 /* TabBarViewController.m in Sources */,
 				C32D683A286755B900DECAF2 /* SceneDelegate.m in Sources */,
+				C32D685628676E9300DECAF2 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

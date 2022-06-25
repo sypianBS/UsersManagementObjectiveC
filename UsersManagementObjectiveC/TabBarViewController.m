@@ -8,6 +8,7 @@
 #import "TabBarViewController.h"
 #import "ViewController.h"
 #import "FavoritesViewController.h"
+#import "SettingsViewController.h"
 
 @interface TabBarViewController ()
 
@@ -19,13 +20,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIViewController *usersViewController = [[ViewController alloc] init];
-    UIImage *usersTabImage = [UIImage systemImageNamed: @"person"];
-    usersViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"Users" image: usersTabImage tag: 0];
-    
     UIViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+    UIViewController *settingsViewController = [[SettingsViewController alloc] init];
+    
+    UIImage *usersTabImage = [UIImage systemImageNamed: @"person"];
     UIImage *favoritesTabImage = [UIImage systemImageNamed: @"star"];
+    UIImage *settingsTabImage = [UIImage systemImageNamed: @"gearshape"];
+    
+    usersViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"Users" image: usersTabImage tag: 0];
     favoritesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"Favorites" image: favoritesTabImage tag: 1];
-    self.viewControllers = [NSArray arrayWithObjects: usersViewController, favoritesViewController, nil];
+    settingsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"Settings" image: settingsTabImage tag: 2];
+    
+    self.viewControllers = [NSArray arrayWithObjects: favoritesViewController, usersViewController, settingsViewController, nil];
 }
 
 /*

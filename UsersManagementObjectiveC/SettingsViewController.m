@@ -1,17 +1,17 @@
 //
-//  FavoritesViewController.m
+//  SettingsViewController.m
 //  UsersManagementObjectiveC
 //
 //  Created by Beniamin on 25.06.22.
 //
 
-#import "FavoritesViewController.h"
+#import "SettingsViewController.h"
 
-@interface FavoritesViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation FavoritesViewController
+@implementation SettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
