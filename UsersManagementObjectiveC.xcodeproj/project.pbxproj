@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C32D6837286755B900DECAF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D6836286755B900DECAF2 /* AppDelegate.m */; };
 		C32D683A286755B900DECAF2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D6839286755B900DECAF2 /* SceneDelegate.m */; };
-		C32D683D286755B900DECAF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D683C286755B900DECAF2 /* ViewController.m */; };
+		C32D683D286755B900DECAF2 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D683C286755B900DECAF2 /* UsersViewController.m */; };
 		C32D6842286755BB00DECAF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32D6841286755BB00DECAF2 /* Assets.xcassets */; };
 		C32D6845286755BB00DECAF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32D6843286755BB00DECAF2 /* LaunchScreen.storyboard */; };
 		C32D6848286755BB00DECAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32D6847286755BB00DECAF2 /* main.m */; };
@@ -24,8 +24,8 @@
 		C32D6836286755B900DECAF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C32D6838286755B900DECAF2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C32D6839286755B900DECAF2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C32D683B286755B900DECAF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C32D683C286755B900DECAF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C32D683B286755B900DECAF2 /* UsersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		C32D683C286755B900DECAF2 /* UsersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
 		C32D6841286755BB00DECAF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32D6844286755BB00DECAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32D6846286755BB00DECAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,24 +68,48 @@
 		C32D6834286755B900DECAF2 /* UsersManagementObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				C32D6835286755B900DECAF2 /* AppDelegate.h */,
-				C32D6836286755B900DECAF2 /* AppDelegate.m */,
-				C32D6838286755B900DECAF2 /* SceneDelegate.h */,
-				C32D6839286755B900DECAF2 /* SceneDelegate.m */,
-				C32D683B286755B900DECAF2 /* ViewController.h */,
-				C32D683C286755B900DECAF2 /* ViewController.m */,
+				C32D685928677B7300DECAF2 /* ViewControllers */,
+				C32D685828677B2A00DECAF2 /* Lifecycle */,
 				C32D6841286755BB00DECAF2 /* Assets.xcassets */,
 				C32D6843286755BB00DECAF2 /* LaunchScreen.storyboard */,
 				C32D6846286755BB00DECAF2 /* Info.plist */,
 				C32D6847286755BB00DECAF2 /* main.m */,
+			);
+			path = UsersManagementObjectiveC;
+			sourceTree = "<group>";
+		};
+		C32D685728677ABC00DECAF2 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				C32D683B286755B900DECAF2 /* UsersViewController.h */,
+				C32D683C286755B900DECAF2 /* UsersViewController.m */,
 				C32D684E2867655800DECAF2 /* FavoritesViewController.h */,
 				C32D684F2867655800DECAF2 /* FavoritesViewController.m */,
-				C32D68512867675400DECAF2 /* TabBarViewController.h */,
-				C32D68522867675400DECAF2 /* TabBarViewController.m */,
 				C32D685428676E9300DECAF2 /* SettingsViewController.h */,
 				C32D685528676E9300DECAF2 /* SettingsViewController.m */,
 			);
-			path = UsersManagementObjectiveC;
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		C32D685828677B2A00DECAF2 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				C32D6835286755B900DECAF2 /* AppDelegate.h */,
+				C32D6836286755B900DECAF2 /* AppDelegate.m */,
+				C32D6838286755B900DECAF2 /* SceneDelegate.h */,
+				C32D6839286755B900DECAF2 /* SceneDelegate.m */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		C32D685928677B7300DECAF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C32D68512867675400DECAF2 /* TabBarViewController.h */,
+				C32D68522867675400DECAF2 /* TabBarViewController.m */,
+				C32D685728677ABC00DECAF2 /* Tabs */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32D68502867655900DECAF2 /* FavoritesViewController.m in Sources */,
-				C32D683D286755B900DECAF2 /* ViewController.m in Sources */,
+				C32D683D286755B900DECAF2 /* UsersViewController.m in Sources */,
 				C32D6837286755B900DECAF2 /* AppDelegate.m in Sources */,
 				C32D6848286755BB00DECAF2 /* main.m in Sources */,
 				C32D68532867675400DECAF2 /* TabBarViewController.m in Sources */,

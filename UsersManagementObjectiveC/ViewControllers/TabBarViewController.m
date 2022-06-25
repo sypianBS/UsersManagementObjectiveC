@@ -6,7 +6,7 @@
 //
 
 #import "TabBarViewController.h"
-#import "ViewController.h"
+#import "UsersViewController.h"
 #import "FavoritesViewController.h"
 #import "SettingsViewController.h"
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIViewController *usersViewController = [[ViewController alloc] init];
+    UIViewController *usersViewController = [[UsersViewController alloc] init];
     UIViewController *favoritesViewController = [[FavoritesViewController alloc] init];
     UIViewController *settingsViewController = [[SettingsViewController alloc] init];
     
