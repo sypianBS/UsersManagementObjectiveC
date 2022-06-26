@@ -7,8 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UsersViewController : UIViewController
+@interface UsersViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
+
+- (void) setupTableView;
+
+@property NSArray *namesArray;
 
 @end
 
