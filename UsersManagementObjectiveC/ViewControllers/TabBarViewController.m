@@ -32,6 +32,7 @@
     settingsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"Settings" image: settingsTabImage tag: 2];
     
     self.viewControllers = [NSArray arrayWithObjects: favoritesViewController, usersViewController, settingsViewController, nil];
+    self.selectedIndex = 1; //middle tab
 }
 
 /*
